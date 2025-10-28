@@ -3,3 +3,16 @@
 `apt install nvim`
 
 [[deploy]]
+## nvim
+
+## node.js
+
+## python
+
+## docker
+
+## nginx
+
+## zsh
+
+## acme.sh

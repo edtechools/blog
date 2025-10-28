@@ -7,10 +7,26 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@nolebase/vitepress-plugin-breadcrumbs':
+        specifier: ^2.18.2
+        version: 2.18.2(vitepress@2.0.0-alpha.12(less@4.4.2)(postcss@8.5.6))
+      vue:
+        specifier: ^3.5.22
+        version: 3.5.22
     devDependencies:
       '@nolebase/markdown-it-bi-directional-links':
         specifier: ^2.18.2
         version: 2.18.2(markdown-it@14.1.0)
+      '@nolebase/vitepress-plugin-enhanced-mark':
+        specifier: ^2.18.2
+        version: 2.18.2(vitepress@2.0.0-alpha.12(less@4.4.2)(postcss@8.5.6))
+      '@nolebase/vitepress-plugin-enhanced-readabilities':
+        specifier: ^2.18.2
+        version: 2.18.2(vitepress@2.0.0-alpha.12(less@4.4.2)(postcss@8.5.6))(vue@3.5.22)
+      '@nolebase/vitepress-plugin-highlight-targeted-heading':
+        specifier: ^2.18.2
+        version: 2.18.2(vitepress@2.0.0-alpha.12(less@4.4.2)(postcss@8.5.6))
       '@nolebase/vitepress-plugin-inline-link-preview':
         specifier: ^2.18.2
         version: 2.18.2(vitepress@2.0.0-alpha.12(less@4.4.2)(postcss@8.5.6))(vue@3.5.22)
@@ -202,6 +218,9 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@iconify-json/carbon@1.2.14':
+    resolution: {integrity: sha512-33u6uGiYJ79Dfp72peT+PBMcjxzi+NyJLpqYRX8pnw0zchsUW7Us2xecgvkWgD83KYcbe6hufyWlHFU9y7fb/Q==}
+
   '@iconify-json/icon-park-outline@1.2.4':
     resolution: {integrity: sha512-NyZxXe2gD2TbTOyoRRMdtEJhr6i2KQCdDlYYoOn5oZLndQjwpIhw79hzeFhXvP38/o40D3gQ+l+IaSJgbB+0TQ==}
 
@@ -235,6 +254,26 @@ packages:
     peerDependencies:
       vitepress: ^1.5.0 || ^2.0.0-alpha.1
       vue: '>= 3.5.18'
+
+  '@nolebase/vitepress-plugin-breadcrumbs@2.18.2':
+    resolution: {integrity: sha512-4Lh68y8dnhWxwsLXjJDcvS0QCBXmORpyroFowilKQjbYsqv+DsSd9i3eeNgvggqSTidtoP/Shz7n1OfRVgTv9A==}
+    peerDependencies:
+      vitepress: ^1.5.0 || ^2.0.0-alpha.1
+
+  '@nolebase/vitepress-plugin-enhanced-mark@2.18.2':
+    resolution: {integrity: sha512-MwdzJuUoGBZLuhKttXs5UX7APqYU37mBywle3hRAlythXIOrnCT1fQyU6zQ8SJCXkojuCUS3N3whQTA2Cmf16Q==}
+    peerDependencies:
+      vitepress: ^1.5.0 || ^2.0.0-alpha.1
+
+  '@nolebase/vitepress-plugin-enhanced-readabilities@2.18.2':
+    resolution: {integrity: sha512-fDhdZBSJL2qs/1xac0PtJfU5UI7b36ffVPYgzM8Ig2NjqMJ7cBvrTTPGq03lUeMjK7GD7fItAKudaP+ZrtMg8w==}
+    peerDependencies:
+      vitepress: ^1.5.0 || ^2.0.0-alpha.1
+
+  '@nolebase/vitepress-plugin-highlight-targeted-heading@2.18.2':
+    resolution: {integrity: sha512-RVrT7FgyjxrnFFR9twc1OJI/5B09+biVbSiO36Yiu2YC+kRMz1Mb553l2DyioLtWJgVNTJ7sj66ZJi40JpDh7g==}
+    peerDependencies:
+      vitepress: ^1.5.0 || ^2.0.0-alpha.1
 
   '@nolebase/vitepress-plugin-inline-link-preview@2.18.2':
     resolution: {integrity: sha512-4hYW5uAYafv0NzZ5Rg78MFmBrT3R7DfCsWdlwH7D1KStZDqo40OYLk9/eOPlmuvpAU8rDfxz5dhMyw8tzxZVtg==}
@@ -1034,6 +1073,10 @@ snapshots:
   '@esbuild/win32-x64@0.25.11':
     optional: true
 
+  '@iconify-json/carbon@1.2.14':
+    dependencies:
+      '@iconify/types': 2.0.0
+
   '@iconify-json/icon-park-outline@1.2.4':
     dependencies:
       '@iconify/types': 2.0.0
@@ -1073,6 +1116,30 @@ snapshots:
       less: 4.4.2
       vitepress: 2.0.0-alpha.12(less@4.4.2)(postcss@8.5.6)
       vue: 3.5.22
+
+  '@nolebase/vitepress-plugin-breadcrumbs@2.18.2(vitepress@2.0.0-alpha.12(less@4.4.2)(postcss@8.5.6))':
+    dependencies:
+      vitepress: 2.0.0-alpha.12(less@4.4.2)(postcss@8.5.6)
+
+  '@nolebase/vitepress-plugin-enhanced-mark@2.18.2(vitepress@2.0.0-alpha.12(less@4.4.2)(postcss@8.5.6))':
+    dependencies:
+      less: 4.4.2
+      vitepress: 2.0.0-alpha.12(less@4.4.2)(postcss@8.5.6)
+
+  '@nolebase/vitepress-plugin-enhanced-readabilities@2.18.2(vitepress@2.0.0-alpha.12(less@4.4.2)(postcss@8.5.6))(vue@3.5.22)':
+    dependencies:
+      '@iconify-json/carbon': 1.2.14
+      '@iconify-json/icon-park-outline': 1.2.4
+      '@nolebase/ui': 2.18.2(vitepress@2.0.0-alpha.12(less@4.4.2)(postcss@8.5.6))(vue@3.5.22)
+      less: 4.4.2
+      vitepress: 2.0.0-alpha.12(less@4.4.2)(postcss@8.5.6)
+    transitivePeerDependencies:
+      - vue
+
+  '@nolebase/vitepress-plugin-highlight-targeted-heading@2.18.2(vitepress@2.0.0-alpha.12(less@4.4.2)(postcss@8.5.6))':
+    dependencies:
+      less: 4.4.2
+      vitepress: 2.0.0-alpha.12(less@4.4.2)(postcss@8.5.6)
 
   '@nolebase/vitepress-plugin-inline-link-preview@2.18.2(vitepress@2.0.0-alpha.12(less@4.4.2)(postcss@8.5.6))(vue@3.5.22)':
     dependencies:

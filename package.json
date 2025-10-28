@@ -1,6 +1,9 @@
 {
   "devDependencies": {
     "@nolebase/markdown-it-bi-directional-links": "^2.18.2",
+    "@nolebase/vitepress-plugin-enhanced-mark": "^2.18.2",
+    "@nolebase/vitepress-plugin-enhanced-readabilities": "^2.18.2",
+    "@nolebase/vitepress-plugin-highlight-targeted-heading": "^2.18.2",
     "@nolebase/vitepress-plugin-inline-link-preview": "^2.18.2",
     "@nolebase/vitepress-plugin-sidebar": "^2.18.2",
     "vitepress": "2.0.0-alpha.12"
@@ -9,5 +12,9 @@
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview"
+  },
+  "dependencies": {
+    "@nolebase/vitepress-plugin-breadcrumbs": "^2.18.2",
+    "vue": "^3.5.22"
   }
 }
