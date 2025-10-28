@@ -1,5 +1,8 @@
 {
   "devDependencies": {
+    "@nolebase/markdown-it-bi-directional-links": "^2.18.2",
+    "@nolebase/vitepress-plugin-inline-link-preview": "^2.18.2",
+    "@nolebase/vitepress-plugin-sidebar": "^2.18.2",
     "vitepress": "2.0.0-alpha.12"
   },
   "scripts": {
